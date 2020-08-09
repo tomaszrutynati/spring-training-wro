@@ -3,6 +3,7 @@ package pl.sda.springboottraining.repository;
 import pl.sda.springboottraining.repository.model.Participant;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ParticipantRepository {
 
@@ -10,7 +11,7 @@ public interface ParticipantRepository {
 
     void update(Integer id, Participant participant);
 
-    Participant findById(Integer id);
+    Optional<Participant> findById(Integer id);
 
     List<Participant> findAll();
 

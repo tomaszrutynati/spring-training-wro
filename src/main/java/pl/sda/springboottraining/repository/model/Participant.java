@@ -1,15 +1,13 @@
 package pl.sda.springboottraining.repository.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Builder
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Participant {
+    @Setter
     private Integer id;
     private String firstName;
     private String lastName;
